@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Manabu Niseki"]
   spec.email         = ["manabu.niseki@gmail.com"]
 
-  spec.summary       = "BinaryEdge API wrappr for Ruby"
-  spec.description   = "BinaryEdge API wrappr for Ruby"
+  spec.summary       = "BinaryEdge API wrapper for Ruby"
+  spec.description   = "BinaryEdge API wrapper for Ruby"
   spec.homepage      = "https://github.com/ninoseki/binaryedge-rb"
   spec.license       = "MIT"
 
