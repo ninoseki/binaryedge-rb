@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.binaryedge.io/v2/query/domains/subdomain/example.com?page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Key:
+      - "<BINARYEDGE_API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.binaryedge.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://app.binaryedge.io
+      Allow:
+      - GET, HEAD, OPTIONS
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Oct 2019 01:54:53 GMT
+      Server:
+      - nginx/1.10.3
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '2591'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"query":"example.com","page":1,"pagesize":100,"total":7811,"events":["golunov1988maksim.example.com","vasiliyvs28.example.com","habahaba.example.com","nrurmc1.example.com","andr.ladner.example.com","smotrov1.artem.example.com","g9g99936.example.com","bddfgergeghd.example.com","vasverde.example.com","ucp-manager-2.example.com","arhitektonika-stroy.example.com","dergachev.example.com","8597.example.com","shot2332.example.com","alexey.kuzmenkov.example.com","ziemekp.example.com","dasha1.maha.example.com","feedbacktorhub.example.com","pobedonoscev2012.example.com","bill.example.com","nice1.kormushin.example.com","look.minakriss.example.com","kavbusiness2.example.com","andrey.webmaster.vologda.example.com","twl.example.com","dengivseti26.example.com","garos.rolan.example.com","147-255-227-158.w.example.com","sandhog.example.com","guestik2014.example.com","a4957939151.example.com","bouchrika04133.example.com","lihachev.example.com","a79110062.example.com","kelseyrosemusic.sm.example.com","kremlit2.example.com","165.unused.example.com","grafika-s.example.com","61064.example.com","auu5.example.com","50186.example.com","relaxmaaaan40.example.com","a955214.example.com","cuvilva2.example.com","pmnbrk.example.com","prometei2018.example.com","sphenoid.example.com","azhukovets79.example.com","bouchrika041141.example.com","bouchrika04177.example.com","hyperkinesia.example.com","x.example.com","proselyte.example.com","vzadorozhniym21413.example.com","myban.example.com","warrfar.example.com","aleks-oren.example.com","deshelvi4.example.com","a340481.example.com","axxxdisk.example.com","igor39.example.com","peacock1939.example.com","eliseen.ko.example.com","a041.timmy.004.example.com","wwwester.example.com","4isithkdp5mac3rd.example.com","misha198819.example.com","57083.example.com","termserver2020.example.com","nice2.kormushin.example.com","p5.example.com","pompon.pompon.example.com","pinga.example.com","arsm202012.example.com","bdfhye5y45ththrthen.example.com","i98348.example.com","yabornyakov6.example.com","admin39.example.com","kookoondra.example.com","peterstolypin.example.com","serb.sb.example.com","reg2.example.com","dubinin.example.com","radiology.example.com","dru90i.example.com","toolboxsoft3.example.com","agk891.example.com","ilyapolos1.example.com","xorowonormalno.example.com","daka1.example.com","vitya123vitya1.ua.example.com","lolboxone.example.com","khaylenko.example.com","noctambulism.example.com","mantikorich.example.com","test250.example.com","smail3.300598.example.com","magneto79au2.example.com","vm30638.example.com","lusvladimir.example.com"]}'
+    http_version: 
+  recorded_at: Tue, 22 Oct 2019 01:54:53 GMT
+recorded_with: VCR 5.0.0

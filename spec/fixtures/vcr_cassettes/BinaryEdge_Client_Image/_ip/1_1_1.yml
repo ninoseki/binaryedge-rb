@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.binaryedge.io/v2/query/image/ip/1.1.1.1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Key:
+      - "<BINARYEDGE_API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.binaryedge.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://app.binaryedge.io
+      Allow:
+      - GET, HEAD, OPTIONS
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Oct 2019 01:12:14 GMT
+      Server:
+      - nginx/1.10.3
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '59'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"query":"1.1.1.1","total":0,"targets_found":0,"events":[]}'
+    http_version: 
+  recorded_at: Tue, 22 Oct 2019 01:12:14 GMT
+recorded_with: VCR 5.0.0
