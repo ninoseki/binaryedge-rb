@@ -1,5 +1,6 @@
 # BinaryEdge
 
+[![Gem Version](https://badge.fury.io/rb/binaryedge.svg)](https://badge.fury.io/rb/binaryedge)
 [![Build Status](https://travis-ci.com/ninoseki/binaryedge-rb.svg?branch=master)](https://travis-ci.com/ninoseki/binaryedge-rb)
 [![Coverage Status](https://coveralls.io/repos/github/ninoseki/binaryedge-rb/badge.svg?branch=master)](https://coveralls.io/github/ninoseki/binaryedge-rb?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/ninoseki/binaryedge-rb/badge)](https://www.codefactor.io/repository/github/ninoseki/binaryedge-rb)
