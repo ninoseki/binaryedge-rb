@@ -19,9 +19,15 @@ http_interactions:
       - api.binaryedge.io
   response:
     status:
-      code: 403
-      message: Forbidden
+      code: 200
+      message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - https://app.binaryedge.io
       Allow:
@@ -29,7 +35,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 22 Oct 2019 01:47:44 GMT
+      - Wed, 23 Oct 2019 09:41:43 GMT
       Server:
       - nginx/1.10.3
       Vary:
@@ -37,12 +43,12 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Content-Length:
-      - '101'
+      - '278'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"Your plan doesn''t allow you to access this resource.","title":"Forbidden","status":"403"}'
+      string: '{"query":"1.1.1.1","events":{"ip":"1.1.1.1","ports":[53,80,443],"results":[{"port":53,"cpe":[],"ts":1569916344031,"cves":[]},{"port":443,"cpe":[],"ts":1569988061505,"cves":[]},{"port":53,"cpe":[],"ts":1569411608375,"cves":[]},{"port":80,"cpe":[],"ts":1571498159115,"cves":[]}]}}'
     http_version: 
-  recorded_at: Tue, 22 Oct 2019 01:47:44 GMT
+  recorded_at: Wed, 23 Oct 2019 09:41:43 GMT
 recorded_with: VCR 5.0.0

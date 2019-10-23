@@ -19,9 +19,15 @@ http_interactions:
       - api.binaryedge.io
   response:
     status:
-      code: 403
-      message: Forbidden
+      code: 200
+      message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - https://app.binaryedge.io
       Allow:
@@ -29,7 +35,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 22 Oct 2019 01:47:45 GMT
+      - Wed, 23 Oct 2019 09:41:45 GMT
       Server:
       - nginx/1.10.3
       Vary:
@@ -37,12 +43,14 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Content-Length:
-      - '101'
+      - '2153'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"Your plan doesn''t allow you to access this resource.","title":"Forbidden","status":"403"}'
+      string: '{"normalized_ip_score":34.3,"normalized_ip_score_detailed":{"cve":0.0,"attack_surface":100.0,"encryption":100.0,"rms":0.0,"storage":0.0,"web":100.0,"torrents":100.0},"ip_score_detailed":{"cve":0.0,"attack_surface":2.0,"encryption":6.0,"rms":0.0,"storage":0.0,"web":3.0,"torrents":1.0},"results_detailed":{"ports":{"open":[443,53,80],"score":3.0},"cve":{"result":[{"port":53,"cve":{"cpe":["cpe:/a:isc:bind"],"cve_list":"no_version_provided","score":0.0},"score":0.0},{"port":443,"cve":{"cpe":["cpe:/a:igor_sysoev:nginx"],"cve_list":"no_version_provided","score":0.0},"score":0.0},{"port":53,"cve":{"cpe":["cpe:/a:isc:bind"],"cve_list":"no_version_provided","score":0.0},"score":0.0}],"score":0.0},"ssl":{"result":[{"port":443,"heartbleed":{"heartbleed":false,"score":0.0},"ccs":{"ccs":false,"score":0.0},"crime":{"crime":true,"score":6.0},"renegotiation":{"renegotiation":false,"score":0.0},"ocsp":{"ocsp":false,"score":0.0},"no_certificates":{"no_certificates":false,"score":0.0},"leaf_certificate":{"sha1_fingerprint":"6656840172b4fbbcd6d0a4a103491e93004d195f","issuer":"DigiCert
+        Inc","subject":"Cloudflare, Inc.","validity":{"date":"2021-02-01 12:00:00","names":["cloudflare-dns.com","*.cloudflare-dns.com","one.one.one.one"],"status":"valid","score":0.0},"signature":{"signature":"ecdsa-with-SHA256","score":0.0},"self_signed":{"self_signed":false,"score":0.0}},"other_certificates":[{"sha1_fingerprint":"56ee7c270683162d83baeacc790e22471adaabe8","issuer":"DigiCert
+        Inc","subject":"DigiCert Inc","validity":{"date":"2023-03-08 12:00:00","status":"valid","score":0.0},"signature":{"signature":"sha384WithRSAEncryption","score":0.0},"self_signed":{"self_signed":false,"score":0.0}}],"ciphers":[{"drown":false,"score":0.0},{"poodle":false,"score":0.0},{"logjam":false,"score":0.0}],"score":6.0}],"score":6.0},"http":{"result":[{"port":443,"service":"ssl/http","score":0.0},{"port":80,"service":"http","score":6.0}],"score":6.0},"web":{"result":[{"port":443,"headers":true,"score":3.0},{"port":80,"headers":true,"score":3.0}],"score":6.0},"torrents":{"result":[{"torrents":true,"score":1.0}],"score":1.0},"is_load_balancer":false},"ip_address":"1.1.1.1"}'
     http_version: 
-  recorded_at: Tue, 22 Oct 2019 01:47:45 GMT
+  recorded_at: Wed, 23 Oct 2019 09:41:45 GMT
 recorded_with: VCR 5.0.0

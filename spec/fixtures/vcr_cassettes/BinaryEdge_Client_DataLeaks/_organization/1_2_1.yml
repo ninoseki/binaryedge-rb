@@ -19,9 +19,15 @@ http_interactions:
       - api.binaryedge.io
   response:
     status:
-      code: 403
-      message: Forbidden
+      code: 200
+      message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - https://app.binaryedge.io
       Allow:
@@ -29,7 +35,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 22 Oct 2019 01:37:47 GMT
+      - Wed, 23 Oct 2019 09:41:46 GMT
       Server:
       - nginx/1.10.3
       Vary:
@@ -37,12 +43,12 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Content-Length:
-      - '101'
+      - '3221'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"Your plan doesn''t allow you to access this resource.","title":"Forbidden","status":"403"}'
+      string: '{"total":388539,"groups":[{"leak":"verificationsio","count":13831},{"leak":"the-collections","count":76893},{"leak":"pastebin","count":7333},{"leak":"bitly","count":85},{"leak":"antipublic","count":44489},{"leak":"exploitin","count":19995},{"leak":"badoo","count":13028},{"leak":"myspace","count":26266},{"leak":"vk","count":2132},{"leak":"imesh","count":7549},{"leak":"breachcompilation","count":58833},{"leak":"mate1","count":2923},{"leak":"customerslive","count":20269},{"leak":"webhost","count":152},{"leak":"fling","count":3058},{"leak":"strongholdkingdoms","count":127},{"leak":"adobe","count":734},{"leak":"dropbox","count":1832},{"leak":"zoosk","count":2506},{"leak":"ashleymadison","count":963},{"leak":"neopets","count":1772},{"leak":"tumblr","count":789},{"leak":"taobao","count":98},{"leak":"xat","count":774},{"leak":"linkedin","count":805},{"leak":"apexsms","count":64084},{"leak":"edmodo","count":1447},{"leak":"tianya","count":171},{"leak":"8tracks","count":100},{"leak":"blankmediagames","count":206},{"leak":"myfitnesspal","count":765},{"leak":"viewlift","count":46},{"leak":"youporn","count":107},{"leak":"disqus","count":12807},{"leak":"leet","count":84},{"leak":"lastfm","count":413},{"leak":"armorgamescom","count":24},{"leak":"modernbusinesssolutions","count":134},{"leak":"7k7k","count":84},{"leak":"myrepospace","count":11},{"leak":"mpgh","count":62},{"leak":"r2games","count":64},{"leak":"patreon","count":17},{"leak":"twitter","count":66},{"leak":"yahoo","count":2},{"leak":"nihonomaru","count":34},{"leak":"gawker","count":26},{"leak":"moneybookers","count":64},{"leak":"nulled","count":10},{"leak":"pdlcollection","count":41},{"leak":"unknown-btc","count":80},{"leak":"datanleads","count":20},{"leak":"habbo","count":31},{"leak":"abusewithus","count":23},{"leak":"ictinedtoolkitorg","count":20},{"leak":"rsboards","count":14},{"leak":"cannabis","count":25},{"leak":"gootkit","count":19},{"leak":"torrentinvites","count":15},{"leak":"dlh","count":11},{"leak":"yealink","count":4},{"leak":"utorrent","count":8},{"leak":"nextgenupdate","count":30},{"leak":"xsplit","count":26},{"leak":"clixsense","count":9},{"leak":"brazzers","count":5},{"leak":"ogusers","count":5},{"leak":"adultfriendfinder","count":10},{"leak":"majorgeeks","count":4},{"leak":"fiesp","count":8},{"leak":"plex","count":1},{"leak":"thebot","count":4},{"leak":"data-contacts","count":1},{"leak":"acne","count":4},{"leak":"myheritage","count":8},{"leak":"cheapassgamer","count":2},{"leak":"ps3hax","count":6},{"leak":"vbulletin","count":5},{"leak":"crackedto","count":10},{"leak":"gta","count":1},{"leak":"latimes","count":1},{"leak":"loungeboard","count":1},{"leak":"thredup","count":1},{"leak":"crackingforum","count":3},{"leak":"evaluarcom","count":1},{"leak":"experian","count":1},{"leak":"androidforums","count":1},{"leak":"abandonia","count":1},{"leak":"minefield","count":1},{"leak":"delicioustakoyaki","count":3},{"leak":"hawkingtech","count":1},{"leak":"mapperycom","count":1},{"leak":"newseasims","count":1},{"leak":"blackhatworld","count":3},{"leak":"win7vista","count":1},{"leak":"sexavet","count":1},{"leak":"muslimmatch","count":1},{"leak":"forbes","count":1},{"leak":"sktorrent","count":1}],"query":"example.com"}'
     http_version: 
-  recorded_at: Tue, 22 Oct 2019 01:37:47 GMT
+  recorded_at: Wed, 23 Oct 2019 09:41:46 GMT
 recorded_with: VCR 5.0.0

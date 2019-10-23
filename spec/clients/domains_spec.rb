@@ -5,8 +5,8 @@ RSpec.describe BinaryEdge::Client::Domains, :vcr do
 
   describe "#ip" do
     it do
-      # res = api.domains.ip("1.1.1.1")
-      # expect(res).to be_a(Hash)
+      res = api.domains.ip("1.1.1.1")
+      expect(res).to be_a(Hash)
     end
   end
 
@@ -26,8 +26,8 @@ RSpec.describe BinaryEdge::Client::Domains, :vcr do
 
   describe "#dns" do
     it do
-      # res = api.domains.dns("example.com")
-      # expect(res).to be_a(Hash)
+      res = api.domains.dns("example.com")
+      expect(res).to be_a(Hash)
     end
   end
 end
