@@ -19,9 +19,15 @@ http_interactions:
       - api.binaryedge.io
   response:
     status:
-      code: 403
-      message: Forbidden
+      code: 200
+      message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - https://app.binaryedge.io
       Allow:
@@ -29,7 +35,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 22 Oct 2019 01:39:47 GMT
+      - Wed, 23 Oct 2019 09:41:41 GMT
       Server:
       - nginx/1.10.3
       Vary:
@@ -37,12 +43,14 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Content-Length:
-      - '101'
+      - '679'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":"Your plan doesn''t allow you to access this resource.","title":"Forbidden","status":"403"}'
+      string: '{"query":"1.1.1.1","total":2,"targets_found":1,"events":[{"origin":{"type":"peer","module":"torrent","ts":1560477251380},"peer":{"ip":"1.1.1.1","port":14993},"torrent":{"infohash":"d57140cd6be10b30e487758bd16d3a4a94e3ef71","name":"Steinberg
+        Cubase Elements 10.0.05 (x64) by Team-V.R[BabuPC]","source":"ThePirateBay","category":"Applications","subcategory":"Windows"}},{"origin":{"type":"peer","module":"torrent","ts":1558540377207},"peer":{"ip":"1.1.1.1","port":51414},"torrent":{"infohash":"8bb681ac382863badd0e5cc1c9aacbb52a972036","name":"Adobe
+        Photoshop CC 2015 (20150529.r.88) (32+64Bit) + Crack","source":"ThePirateBay","category":"Applications","subcategory":"Windows"}}]}'
     http_version: 
-  recorded_at: Tue, 22 Oct 2019 01:39:47 GMT
+  recorded_at: Wed, 23 Oct 2019 09:41:42 GMT
 recorded_with: VCR 5.0.0

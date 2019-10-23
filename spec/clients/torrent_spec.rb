@@ -12,8 +12,8 @@ RSpec.describe BinaryEdge::Client::Torrent, :vcr do
 
   describe "#historical" do
     it do
-      # res = api.torrent.historical("1.1.1.1")
-      # expect(res).to be_a(Hash)
+      res = api.torrent.historical("1.1.1.1")
+      expect(res).to be_a(Hash)
     end
   end
 
