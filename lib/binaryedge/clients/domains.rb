@@ -31,6 +31,32 @@ module BinaryEdge
         params = { page: page }
         _get("/query/domains/dns/#{target}", params) { |json| json }
       end
+
+      #
+      # Enumerate subdomains from a larger dataset
+      #
+      # @param [String] target Domain you want to get DNS related data.
+      # @param [Integer] validate Optional, Forces all subdomains to be resolved on request and only live subdomains to be returned. Default: 0 (False)
+      #
+      # @return [Hash]
+      #
+      def enumeration(target, validate: 0)
+        params = { validate: validate }
+        _get("/query/domains/enumeration/#{target}", params) { |json| json }
+      end
+
+      #
+      # Generate a list of homoglyphs for a base domain
+      #
+      # @param [String] target Domain you want to get DNS related data.
+      # @param [Integer] validate Optional, Forces all subdomains to be resolved on request and only live subdomains to be returned. Default: 0 (False)
+      #
+      # @return [Hash]
+      #
+      def homoglyphs(target, validate: 0)
+        params = { validate: validate }
+        _get("/query/domains/homoglyphs/#{target}", params) { |json| json }
+      end
     end
   end
 end
